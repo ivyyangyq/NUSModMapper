@@ -1,2 +1,18 @@
 # NUSModMapper
 2018 NUS Orbital Gemini project
+
+This is a Gemini level project designed to facilitate NUS students who are interested in going for student exchange. The objective of this project is to develop a web application that makes the process of finding partner university modules which have been previously mapped to NUS modules more convenient. Our app will help students make more informed decision about student exchange and module mapping.
+
+Currently, if students want to find out information about modules that have been previously approved and mapped, the only approach available is the module mapping search function on the myisis website. However, the function is not well-designed and it makes the module mapping process difficult. For one thing, the module mapping on the site is only searchable on a school-by-school basis and cannot be searched by module code. For students who have a need to map specific modules on student exchange, this renders a huge challenge. In addition, the website only allows the search by school name from the beginning to the end with no error tolerance. In the system, some school are abbreviated as “Uni” while others are listed as “University”. This adds to the challenge of finding the correct school. Moreover, the result of the search is displayed as a form which is not user friendly. Essential information cannot be easily seen. Targeting these problems, we decide to build a web application that would make module mapping search less cumbersome.
+
+ The planned features of the web application include followings:
+
+  1. Search can be done with both schools and module codes.  Since in myisis website, students can only search by schools, which is not sufficient, especially for students who want to map a specific module. With this function, students can search for the available mapping by both schools and module codes. Thus, it can satisfy the need for both students who have decided the partner university and the students who want to map a specific module and are searching for appropriate university. 
+
+  2. Vague search. With vague search, users only need to type in a few key words and the system will find the results. Moreover, if there is a small typo, the system will correct the mistake automatically and find the desired information. This will not only solve the problem of typo but also help the students who just have a vague idea about the target university or the module. 
+
+  3. More explicit format of information display. On myisis, the display of results is quite dense and tedious, which is quite hard to see. We are going to change the displaying format and make it more explicit and user-friendly.
+
+  4. More comprehensive results. About the results, the system will not only provided the modules available for mapping, but also give more detailed information about the module. With only a click of the module title, users can see the detailed information about this module in the partner university, including the introduction of the module, the overall grades (such as the bell curve) in the past years and some comments of the module if available. Thus, this can give more comprehensive information to users and help them make better decisions on course mapping.
+
+In the next phase we will focus on data collection and data storage. We will go through all the previous mapped courses and gather the information of the modules in the partner universities. And we will also start the design of the frontend with Meteor JS. Moreover, we will start the logistics (backend) of the feature 1, modules searching by school names and module codes, which will be the function available for our minimum viable product.

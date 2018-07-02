@@ -4,9 +4,10 @@
   "description": "Visualize your friends network",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "author": "Yao Yujian <yyjhao@gmail.com> (http://yjyao.com/)",
+  "author": "Yang Yiqing",
   "license": "MIT",
   "dependencies": {
     "express": "3.21.2",

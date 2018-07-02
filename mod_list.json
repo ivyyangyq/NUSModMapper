@@ -1,0 +1,902 @@
+{
+    "CM1111 Inorganic Chemistry 1": {
+        "Module code": "CM1111",
+        "Subject": "Chemistry"
+    },
+    "CM1121 Organic Chemistry 1": {
+        "Module code": "CM1121",
+        "Subject": "Chemistry"
+    },
+    "CM1131 Physical Chemistry 1": {
+        "Module code": "CM1131",
+        "Subject": "Chemistry"
+    },
+    "CM1401 Chemistry for Life Sciences": {
+        "Module code": "CM1401",
+        "Subject": "Chemistry"
+    },
+    "CM1402 General Chemistry": {
+        "Module code": "CM1402",
+        "Subject": "Chemistry"
+    },
+    "CM1417 Fundamentals of Chemistry": {
+        "Module code": "CM1417",
+        "Subject": "Chemistry"
+    },
+    "CM1501 Organic Chemistry for Engineers": {
+        "Module code": "CM1501",
+        "Subject": "Chemistry"
+    },
+    "CM1502 General and Physical Chemistry for Engineers": {
+        "Module code": "CM1502",
+        "Subject": "Chemistry"
+    },
+    "CM1991 NUS Exchange Enrichment Module": {
+        "Module code": "CM1991",
+        "Subject": "Chemistry"
+    },
+    "CM2101 Physical Chemistry 2": {
+        "Module code": "CM2101",
+        "Subject": "Chemistry"
+    },
+    "CM2121 Organic Chemistry 2": {
+        "Module code": "CM2121",
+        "Subject": "Chemistry"
+    },
+    "CM2142 Analytical Chemistry 1": {
+        "Module code": "CM2142",
+        "Subject": "Chemistry"
+    },
+    "CM3201 Principles of Chemical Processes": {
+        "Module code": "CM3201",
+        "Subject": "Chemistry"
+    },
+    "CM3212 Transition Metal Chemistry": {
+        "Module code": "CM3212",
+        "Subject": "Chemistry"
+    },
+    "CM3221 Organic Synthesis: The Disconnection Approach": {
+        "Module code": "CM3221",
+        "Subject": "Chemistry"
+    },
+    "CM3222 Organic Reaction Mechanisms": {
+        "Module code": "CM3222",
+        "Subject": "Chemistry"
+    },
+    "CM3225 Biomolecules": {
+        "Module code": "CM3225",
+        "Subject": "Chemistry"
+    },
+    "CM3231 Quantum Chem & Molecular Thermodynamics": {
+        "Module code": "CM3231",
+        "Subject": "Chemistry"
+    },
+    "CM3232 Phy Chem of the Solid State & Interfaces": {
+        "Module code": "CM3232",
+        "Subject": "Chemistry"
+    },
+    "CM3242 Instrumental Analysis II": {
+        "Module code": "CM3242",
+        "Subject": "Chemistry"
+    },
+    "CM3251 Nanochemistry": {
+        "Module code": "CM3251",
+        "Subject": "Chemistry"
+    },
+    "CM3252 Polymer Chemistry 1": {
+        "Module code": "CM3252",
+        "Subject": "Chemistry"
+    },
+    "CM3253 Materials Chemistry 1": {
+        "Module code": "CM3253",
+        "Subject": "Chemistry"
+    },
+    "CM3261 Environmental Chemistry": {
+        "Module code": "CM3261",
+        "Subject": "Chemistry"
+    },
+    "CM3296 Molecular Modelling: Theory & Practice": {
+        "Module code": "CM3296",
+        "Subject": "Chemistry"
+    },
+    "CM3991 NUS Exchange Enrichment Module": {
+        "Module code": "CM3991",
+        "Subject": "Chemistry"
+    },
+    "CM4212 Advanced Organometallic Chemistry": {
+        "Module code": "CM4212",
+        "Subject": "Chemistry"
+    },
+    "CM4214 Structural Methods in Inorganic Chem": {
+        "Module code": "CM4214",
+        "Subject": "Chemistry"
+    },
+    "CM4215 Bioinorganic Chemistry": {
+        "Module code": "CM4215",
+        "Subject": "Chemistry"
+    },
+    "CM4225 Organic Spectroscopy": {
+        "Module code": "CM4225",
+        "Subject": "Chemistry"
+    },
+    "CM4227 Chemical Biology": {
+        "Module code": "CM4227",
+        "Subject": "Chemistry"
+    },
+    "CM4228 Catalysis": {
+        "Module code": "CM4228",
+        "Subject": "Chemistry"
+    },
+    "CM4238 Selected Topics in Physical Chemistry": {
+        "Module code": "CM4238",
+        "Subject": "Chemistry"
+    },
+    "CM4242 Advanced Analytical Techniques": {
+        "Module code": "CM4242",
+        "Subject": "Chemistry"
+    },
+    "CM4254 Chemistry of Semiconductors": {
+        "Module code": "CM4254",
+        "Subject": "Chemistry"
+    },
+    "CM4269 Sustainable & Green Chemistry": {
+        "Module code": "CM4269",
+        "Subject": "Chemistry"
+    },
+    "CM4271 Medicinal Chemistry": {
+        "Module code": "CM4271",
+        "Subject": "Chemistry"
+    },
+    "CM4273 Computational Drug Design": {
+        "Module code": "CM4273",
+        "Subject": "Chemistry"
+    },
+    "CM4274 The Art and Methodology in Total Synthesis": {
+        "Module code": "CM4274",
+        "Subject": "Chemistry"
+    },
+    "CM4282 Energy Resources": {
+        "Module code": "CM4282",
+        "Subject": "Chemistry"
+    },
+    "CM4991 NUS Exchange Enrichment Module": {
+        "Module code": "CM4991",
+        "Subject": "Chemistry"
+    },
+    "FST1991 NUS Exchange Enrichment Module": {
+        "Module code": "FST1991",
+        "Subject": "Food Science"
+    },
+    "FST1992 NUS Exchange Enrichment Module": {
+        "Module code": "FST1992",
+        "Subject": "Food Science"
+    },
+    "FST2201 Introduction to Human Nutrition": {
+        "Module code": "FST2201",
+        "Subject": "Food Science"
+    },
+    "FST2991 NUS Exchange Enrichment Module": {
+        "Module code": "FST2991",
+        "Subject": "Food Science"
+    },
+    "FST2992 NUS Exchange Enrichment Module": {
+        "Module code": "FST2992",
+        "Subject": "Food Science"
+    },
+    "FST3202 Nutrition and Disease Prevention": {
+        "Module code": "FST3202",
+        "Subject": "Food Science"
+    },
+    "FST3991 NUS Exchange Enrichment Module": {
+        "Module code": "FST3991",
+        "Subject": "Food Science"
+    },
+    "LSM1102 Molecular Genetics": {
+        "Module code": "LSM1102",
+        "Subject": "Life Science"
+    },
+    "LSM1105 Evolutionary Biology": {
+        "Module code": "LSM1105",
+        "Subject": "Life Science"
+    },
+    "LSM1301 General Biology": {
+        "Module code": "LSM1301",
+        "Subject": "Life Science"
+    },
+    "LSM1303 Animal Behaviour": {
+        "Module code": "LSM1303",
+        "Subject": "Life Science"
+    },
+    "LSM1306 Forensic Science": {
+        "Module code": "LSM1306",
+        "Subject": "Life Science"
+    },
+    "LSM1401 Fundamentals of Biochemistry": {
+        "Module code": "LSM1401",
+        "Subject": "Life Science"
+    },
+    "LSM1991 NUS Exchange Enrichment Module": {
+        "Module code": "LSM1991",
+        "Subject": "Life Science"
+    },
+    "LSM1996 NUS Exchange Enrichment Module": {
+        "Module code": "LSM1996",
+        "Subject": "Life Science"
+    },
+    "LSM2191 Laboratory Techniques in Life Sciences": {
+        "Module code": "LSM2191",
+        "Subject": "Life Science"
+    },
+    "LSM2212 Human Anatomy": {
+        "Module code": "LSM2212",
+        "Subject": "Life Science"
+    },
+    "LSM2233 Cell Biology": {
+        "Module code": "LSM2233",
+        "Subject": "Life Science"
+    },
+    "LSM2241 Introductory Bioinformatics": {
+        "Module code": "LSM2241",
+        "Subject": "Life Science"
+    },
+    "LSM2251 Ecology and Environment": {
+        "Module code": "LSM2251",
+        "Subject": "Life Science"
+    },
+    "LSM2253 Applied Data Analysis in Ecology and Evolution": {
+        "Module code": "LSM2253",
+        "Subject": "Life Science"
+    },
+    "LSM2291 Fundamental Techniques in Microbiology": {
+        "Module code": "LSM2291",
+        "Subject": "Life Science"
+    },
+    "LSM2991 NUS Exchange Enrichment Module": {
+        "Module code": "LSM2991",
+        "Subject": "Life Science"
+    },
+    "LSM2996 NUS Exchange Enrichment Module": {
+        "Module code": "LSM2996",
+        "Subject": "Life Science"
+    },
+    "LSM3201 Research and Communication in Life Sciences": {
+        "Module code": "LSM3201",
+        "Subject": "Life Science"
+    },
+    "LSM3211 Fundamental Pharmacology": {
+        "Module code": "LSM3211",
+        "Subject": "Life Science"
+    },
+    "LSM3212 Human Physiology: Cardiopulmonary System": {
+        "Module code": "LSM3212",
+        "Subject": "Life Science"
+    },
+    "LSM3214 Human Physiology - Hormones and Health": {
+        "Module code": "LSM3214",
+        "Subject": "Life Science"
+    },
+    "LSM3215 Neuronal Signaling and Memory Mechanisms": {
+        "Module code": "LSM3215",
+        "Subject": "Life Science"
+    },
+    "LSM3216 Neuronal Development and Diseases": {
+        "Module code": "LSM3216",
+        "Subject": "Life Science"
+    },
+    "LSM3217 Human Ageing": {
+        "Module code": "LSM3217",
+        "Subject": "Life Science"
+    },
+    "LSM3218 Cardiopulmonary Pharmacology": {
+        "Module code": "LSM3218",
+        "Subject": "Life Science"
+    },
+    "LSM3219 Neuropharmacology": {
+        "Module code": "LSM3219",
+        "Subject": "Life Science"
+    },
+    "LSM3222 Human Neuroanatomy": {
+        "Module code": "LSM3222",
+        "Subject": "Life Science"
+    },
+    "LSM3223 Immunology": {
+        "Module code": "LSM3223",
+        "Subject": "Life Science"
+    },
+    "LSM3224 Molecular Basis of Human Diseases": {
+        "Module code": "LSM3224",
+        "Subject": "Life Science"
+    },
+    "LSM3225 Molecular Microbiology in Human Diseases": {
+        "Module code": "LSM3225",
+        "Subject": "Life Science"
+    },
+    "LSM3231 Protein Structure and Function": {
+        "Module code": "LSM3231",
+        "Subject": "Life Science"
+    },
+    "LSM3232 Microbiology": {
+        "Module code": "LSM3232",
+        "Subject": "Life Science"
+    },
+    "LSM3233 Developmental Biology": {
+        "Module code": "LSM3233",
+        "Subject": "Life Science"
+    },
+    "LSM3241 Genomic Data Analysis": {
+        "Module code": "LSM3241",
+        "Subject": "Life Science"
+    },
+    "LSM3242 Translational Microbiology": {
+        "Module code": "LSM3242",
+        "Subject": "Life Science"
+    },
+    "LSM3243 Molecular Biophysics": {
+        "Module code": "LSM3243",
+        "Subject": "Life Science"
+    },
+    "LSM3245 RNA Biology and Technology": {
+        "Module code": "LSM3245",
+        "Subject": "Life Science"
+    },
+    "LSM3246 Synthetic Biology": {
+        "Module code": "LSM3246",
+        "Subject": "Life Science"
+    },
+    "LSM3252 Evolution and Comparative Genomics": {
+        "Module code": "LSM3252",
+        "Subject": "Life Science"
+    },
+    "LSM3254 Ecology of Aquatic Environments": {
+        "Module code": "LSM3254",
+        "Subject": "Life Science"
+    },
+    "LSM3255 Ecology of Terrestrial Environments": {
+        "Module code": "LSM3255",
+        "Subject": "Life Science"
+    },
+    "LSM3256 Tropical Horticulture": {
+        "Module code": "LSM3256",
+        "Subject": "Life Science"
+    },
+    "LSM3258 Comparative Botany": {
+        "Module code": "LSM3258",
+        "Subject": "Life Science"
+    },
+    "LSM3259 Fungal Biology": {
+        "Module code": "LSM3259",
+        "Subject": "Life Science"
+    },
+    "LSM3262 Environmental Animal Physiology": {
+        "Module code": "LSM3262",
+        "Subject": "Life Science"
+    },
+    "LSM3264 Environmental Biochemistry": {
+        "Module code": "LSM3264",
+        "Subject": "Life Science"
+    },
+    "LSM3265 Entomology": {
+        "Module code": "LSM3265",
+        "Subject": "Life Science"
+    },
+    "LSM3266 Avian Biology and Evolution": {
+        "Module code": "LSM3266",
+        "Subject": "Life Science"
+    },
+    "LSM3267 Behavioural Biology": {
+        "Module code": "LSM3267",
+        "Subject": "Life Science"
+    },
+    "LSM3272 Global Change Biology": {
+        "Module code": "LSM3272",
+        "Subject": "Life Science"
+    },
+    "LSM3991 NUS Exchange Enrichment Module": {
+        "Module code": "LSM3991",
+        "Subject": "Life Science"
+    },
+    "LSM3994 NUS Exchange Enrichment Module": {
+        "Module code": "LSM3994",
+        "Subject": "Life Science"
+    },
+    "LSM4210 Topics in Biomedical Science": {
+        "Module code": "LSM4210",
+        "Subject": "Life Science"
+    },
+    "LSM4211 Toxicology": {
+        "Module code": "LSM4211",
+        "Subject": "Life Science"
+    },
+    "LSM4213 System Neurobiology": {
+        "Module code": "LSM4213",
+        "Subject": "Life Science"
+    },
+    "LSM4214 Cancer Pharmacology": {
+        "Module code": "LSM4214",
+        "Subject": "Life Science"
+    },
+    "LSM4221 Drug Discovery and Clinical Trials": {
+        "Module code": "LSM4221",
+        "Subject": "Life Science"
+    },
+    "LSM4222 Advanced Immunology": {
+        "Module code": "LSM4222",
+        "Subject": "Life Science"
+    },
+    "LSM4223 Advances in Antimicrobial Strategies": {
+        "Module code": "LSM4223",
+        "Subject": "Life Science"
+    },
+    "LSM4226 Infection and Immunity": {
+        "Module code": "LSM4226",
+        "Subject": "Life Science"
+    },
+    "LSM4227 Stem Cell Biology": {
+        "Module code": "LSM4227",
+        "Subject": "Life Science"
+    },
+    "LSM4231 Structural Biology": {
+        "Module code": "LSM4231",
+        "Subject": "Life Science"
+    },
+    "LSM4232 Advanced Cell Biology": {
+        "Module code": "LSM4232",
+        "Subject": "Life Science"
+    },
+    "LSM4241 Functional Genomics": {
+        "Module code": "LSM4241",
+        "Subject": "Life Science"
+    },
+    "LSM4243 Tumour Biology": {
+        "Module code": "LSM4243",
+        "Subject": "Life Science"
+    },
+    "LSM4244 Oncogenes and Signal Transduction": {
+        "Module code": "LSM4244",
+        "Subject": "Life Science"
+    },
+    "LSM4245 Epigenetics and Chromatin Biology": {
+        "Module code": "LSM4245",
+        "Subject": "Life Science"
+    },
+    "LSM4251 Plant Growth and Development": {
+        "Module code": "LSM4251",
+        "Subject": "Life Science"
+    },
+    "LSM4252 Reproductive Biology": {
+        "Module code": "LSM4252",
+        "Subject": "Life Science"
+    },
+    "LSM4254 Principles of Taxonomy and Systematics": {
+        "Module code": "LSM4254",
+        "Subject": "Life Science"
+    },
+    "LSM4255 Methods in Mathematical Biology": {
+        "Module code": "LSM4255",
+        "Subject": "Life Science"
+    },
+    "LSM4261 Marine Biology": {
+        "Module code": "LSM4261",
+        "Subject": "Life Science"
+    },
+    "LSM4262 Tropical Conservation Biology": {
+        "Module code": "LSM4262",
+        "Subject": "Life Science"
+    },
+    "LSM4264 Freshwater Biology": {
+        "Module code": "LSM4264",
+        "Subject": "Life Science"
+    },
+    "LSM4265 Urban Ecology": {
+        "Module code": "LSM4265",
+        "Subject": "Life Science"
+    },
+    "LSM4267 Animal Communications & Sensory Ecology": {
+        "Module code": "LSM4267",
+        "Subject": "Life Science"
+    },
+    "MA1100 Fundamental Concepts of Mathematics": {
+        "Module code": "MA1100",
+        "Subject": "Math"
+    },
+    "MA1101R Linear Algebra I": {
+        "Module code": "MA1101R",
+        "Subject": "Math"
+    },
+    "MA1102R Calculus": {
+        "Module code": "MA1102R",
+        "Subject": "Math"
+    },
+    "MA1104 Multivariable Calculus": {
+        "Module code": "MA1104",
+        "Subject": "Math"
+    },
+    "MA1311 Matrix Algebra": {
+        "Module code": "MA1311",
+        "Subject": "Math"
+    },
+    "MA1312 Calculus with Applications": {
+        "Module code": "MA1312",
+        "Subject": "Math"
+    },
+    "MA1421 Basic Applied Mathematics for Sciences": {
+        "Module code": "MA1421",
+        "Subject": "Math"
+    },
+    "MA1506 Mathematics II": {
+        "Module code": "MA1506",
+        "Subject": "Math"
+    },
+    "MA1507 Advanced Calculus": {
+        "Module code": "MA1507",
+        "Subject": "Math"
+    },
+    "MA1508 Linear Algebra with Applications": {
+        "Module code": "MA1508",
+        "Subject": "Math"
+    },
+    "MA1991 NUS Exchange Enrichment Module": {
+        "Module code": "MA1991",
+        "Subject": "Math"
+    },
+    "PC1141 Introduction to Classical Mechanics": {
+        "Module code": "PC1141",
+        "Subject": "Physics"
+    },
+    "PC1142 Introduction to Thermodynamics and Optics": {
+        "Module code": "PC1142",
+        "Subject": "Physics"
+    },
+    "PC1143 Introduction to Electricity & Magnetism": {
+        "Module code": "PC1143",
+        "Subject": "Physics"
+    },
+    "PC1144 Introduction to Modern Physics": {
+        "Module code": "PC1144",
+        "Subject": "Physics"
+    },
+    "PC1221 Fundamentals of Physics I": {
+        "Module code": "PC1221",
+        "Subject": "Physics"
+    },
+    "PC1222 Fundamentals of Physics II": {
+        "Module code": "PC1222",
+        "Subject": "Physics"
+    },
+    "PC1322 Understanding the Universe": {
+        "Module code": "PC1322",
+        "Subject": "Physics"
+    },
+    "PC1326 Physics in the Life Sciences": {
+        "Module code": "PC1326",
+        "Subject": "Physics"
+    },
+    "PC1327 Science of Music": {
+        "Module code": "PC1327",
+        "Subject": "Physics"
+    },
+    "PC1421 Physics for Life Sciences": {
+        "Module code": "PC1421",
+        "Subject": "Physics"
+    },
+    "PC1431 Physics IE": {
+        "Module code": "PC1431",
+        "Subject": "Physics"
+    },
+    "PC1432 Physics IIE": {
+        "Module code": "PC1432",
+        "Subject": "Physics"
+    },
+    "PC1433 Mechanics and Waves": {
+        "Module code": "PC1433",
+        "Subject": "Physics"
+    },
+    "PC1991 NUS Exchange Enrichment Module": {
+        "Module code": "PC1991",
+        "Subject": "Physics"
+    },
+    "PC2130 Quantum Mechanics I": {
+        "Module code": "PC2130",
+        "Subject": "Physics"
+    },
+    "PC2130B Applied Quantum Physics": {
+        "Module code": "PC2130B",
+        "Subject": "Physics"
+    },
+    "PC2131 Electricity & Magnetism I": {
+        "Module code": "PC2131",
+        "Subject": "Physics"
+    },
+    "PC2133 Applied Solid State Physics": {
+        "Module code": "PC2133",
+        "Subject": "Physics"
+    },
+    "PC2134 Mathematical Mtds In Physics I": {
+        "Module code": "PC2134",
+        "Subject": "Physics"
+    },
+    "PC2230 Thermodynamics and Statistical Mechanics": {
+        "Module code": "PC2230",
+        "Subject": "Physics"
+    },
+    "PC2232 Physics for Electrical Engineers": {
+        "Module code": "PC2232",
+        "Subject": "Physics"
+    },
+    "PC2267 Biophysics I": {
+        "Module code": "PC2267",
+        "Subject": "Physics"
+    },
+    "PC2991 NUS Exchange Enrichment Module": {
+        "Module code": "PC2991",
+        "Subject": "Physics"
+    },
+    "PC2992 NUS Exchange Enrichment Module": {
+        "Module code": "PC2992",
+        "Subject": "Physics"
+    },
+    "PC3130 Quantum Mechanics II": {
+        "Module code": "PC3130",
+        "Subject": "Physics"
+    },
+    "PC3193 Experimental Physics II": {
+        "Module code": "PC3193",
+        "Subject": "Physics"
+    },
+    "PC3231 Electricity & Magnetism II": {
+        "Module code": "PC3231",
+        "Subject": "Physics"
+    },
+    "PC3232 Nuclear & Particle Physics": {
+        "Module code": "PC3232",
+        "Subject": "Physics"
+    },
+    "PC3232B Applied Nuclear Physics": {
+        "Module code": "PC3232B",
+        "Subject": "Physics"
+    },
+    "PC3233 Atomic & Molecular Physics I": {
+        "Module code": "PC3233",
+        "Subject": "Physics"
+    },
+    "PC3235 Solid State Physics I": {
+        "Module code": "PC3235",
+        "Subject": "Physics"
+    },
+    "PC3236 Computational Methods in Physics": {
+        "Module code": "PC3236",
+        "Subject": "Physics"
+    },
+    "PC3238 Fluid Dynamics": {
+        "Module code": "PC3238",
+        "Subject": "Physics"
+    },
+    "PC3240 Atmosphere, Ocean and Climate Dynamics": {
+        "Module code": "PC3240",
+        "Subject": "Physics"
+    },
+    "PC3241 Solid State Devices": {
+        "Module code": "PC3241",
+        "Subject": "Physics"
+    },
+    "PC3242 Physics of Semiconductor Processing": {
+        "Module code": "PC3242",
+        "Subject": "Physics"
+    },
+    "PC3243 Photonics": {
+        "Module code": "PC3243",
+        "Subject": "Physics"
+    },
+    "PC3246 Astrophysics I": {
+        "Module code": "PC3246",
+        "Subject": "Physics"
+    },
+    "PC3247 Modern Optics": {
+        "Module code": "PC3247",
+        "Subject": "Physics"
+    },
+    "PC3251 Nanophysics": {
+        "Module code": "PC3251",
+        "Subject": "Physics"
+    },
+    "PC3267 Biophysics II": {
+        "Module code": "PC3267",
+        "Subject": "Physics"
+    },
+    "PC3274 Mathematical Methods in Physics II": {
+        "Module code": "PC3274",
+        "Subject": "Physics"
+    },
+    "PC3991 NUS Exchange Enrichment Module": {
+        "Module code": "PC3991",
+        "Subject": "Physics"
+    },
+    "PC4130 Quantum Mechanics III": {
+        "Module code": "PC4130",
+        "Subject": "Physics"
+    },
+    "PC4232 Cosmology": {
+        "Module code": "PC4232",
+        "Subject": "Physics"
+    },
+    "PC4240 Solid State Physics II": {
+        "Module code": "PC4240",
+        "Subject": "Physics"
+    },
+    "PC4241 Statistical Mechanics": {
+        "Module code": "PC4241",
+        "Subject": "Physics"
+    },
+    "PC4245 Particle Physics": {
+        "Module code": "PC4245",
+        "Subject": "Physics"
+    },
+    "PC4246 Quantum Optics": {
+        "Module code": "PC4246",
+        "Subject": "Physics"
+    },
+    "PC4248 Relativity": {
+        "Module code": "PC4248",
+        "Subject": "Physics"
+    },
+    "PC4249 Astrophysics II": {
+        "Module code": "PC4249",
+        "Subject": "Physics"
+    },
+    "PC4253 Thin Film Technology": {
+        "Module code": "PC4253",
+        "Subject": "Physics"
+    },
+    "PC4259 Surface Physics": {
+        "Module code": "PC4259",
+        "Subject": "Physics"
+    },
+    "PC4267 Biophysics III": {
+        "Module code": "PC4267",
+        "Subject": "Physics"
+    },
+    "PC4274 Mathematical Methods in Physics III": {
+        "Module code": "PC4274",
+        "Subject": "Physics"
+    },
+    "PC4991 NUS Exchange Enrichment Module": {
+        "Module code": "PC4991",
+        "Subject": "Physics"
+    },
+    "PC4992 NUS Exchange Enrichment Module": {
+        "Module code": "PC4992",
+        "Subject": "Physics"
+    },
+    "ST1131 Introduction to Statistics": {
+        "Module code": "ST1131",
+        "Subject": "Statistics"
+    },
+    "ST1991 NUS Exchange Enrichment Module": {
+        "Module code": "ST1991",
+        "Subject": "Statistics"
+    },
+    "ST2131 Probability": {
+        "Module code": "ST2131",
+        "Subject": "Statistics"
+    },
+    "ST2132 Mathematical Statistics": {
+        "Module code": "ST2132",
+        "Subject": "Statistics"
+    },
+    "ST2137 Computer Aided Data Analysis": {
+        "Module code": "ST2137",
+        "Subject": "Statistics"
+    },
+    "ST2334 Probability and Statistics": {
+        "Module code": "ST2334",
+        "Subject": "Statistics"
+    },
+    "ST2991 NUS Exchange Enrichment Module": {
+        "Module code": "ST2991",
+        "Subject": "Statistics"
+    },
+    "ST3131 Regression Analysis": {
+        "Module code": "ST3131",
+        "Subject": "Statistics"
+    },
+    "ST3232 Design & Analysis of Experiments": {
+        "Module code": "ST3232",
+        "Subject": "Statistics"
+    },
+    "ST3233 Applied Time Series Analysis": {
+        "Module code": "ST3233",
+        "Subject": "Statistics"
+    },
+    "ST3234 Actuarial Statistics": {
+        "Module code": "ST3234",
+        "Subject": "Statistics"
+    },
+    "ST3235 Statistical Quality Control": {
+        "Module code": "ST3235",
+        "Subject": "Statistics"
+    },
+    "ST3236 Stochastic Processes I": {
+        "Module code": "ST3236",
+        "Subject": "Statistics"
+    },
+    "ST3239 Survey Methodology": {
+        "Module code": "ST3239",
+        "Subject": "Statistics"
+    },
+    "ST3240 Multivariate Statistical Analysis": {
+        "Module code": "ST3240",
+        "Subject": "Statistics"
+    },
+    "ST3241 Categorical Data Analysis I": {
+        "Module code": "ST3241",
+        "Subject": "Statistics"
+    },
+    "ST3242 Introduction to Survival Analysis": {
+        "Module code": "ST3242",
+        "Subject": "Statistics"
+    },
+    "ST3243 Statistical Methods in Epidemiology": {
+        "Module code": "ST3243",
+        "Subject": "Statistics"
+    },
+    "ST3245 Statistics in Molecular Biology": {
+        "Module code": "ST3245",
+        "Subject": "Statistics"
+    },
+    "ST3246 Statistical Models for Actuarial Science": {
+        "Module code": "ST3246",
+        "Subject": "Statistics"
+    },
+    "ST3247 Simulation": {
+        "Module code": "ST3247",
+        "Subject": "Statistics"
+    },
+    "ST3991 NUS Exchange Enrichment Module": {
+        "Module code": "ST3991",
+        "Subject": "Statistics"
+    },
+    "ST4231 Computer Intensive Statistical Methods": {
+        "Module code": "ST4231",
+        "Subject": "Statistics"
+    },
+    "ST4232 Nonparametric Statistics": {
+        "Module code": "ST4232",
+        "Subject": "Statistics"
+    },
+    "ST4233 Linear Models": {
+        "Module code": "ST4233",
+        "Subject": "Statistics"
+    },
+    "ST4234 Bayesian Statistics": {
+        "Module code": "ST4234",
+        "Subject": "Statistics"
+    },
+    "ST4237 Probability Theory I": {
+        "Module code": "ST4237",
+        "Subject": "Statistics"
+    },
+    "ST4238 Stochastic Processes II": {
+        "Module code": "ST4238",
+        "Subject": "Statistics"
+    },
+    "ST4240 Data Mining": {
+        "Module code": "ST4240",
+        "Subject": "Statistics"
+    },
+    "ST4242 Analysis of Longitudinal Data": {
+        "Module code": "ST4242",
+        "Subject": "Statistics"
+    },
+    "ST4245 Statistical Methods for Finance": {
+        "Module code": "ST4245",
+        "Subject": "Statistics"
+    },
+    "ST4991 NUS Exchange Enrichment Module": {
+        "Module code": "ST4991",
+        "Subject": "Statistics"
+    },
+    "ST4992 NUS Exchange Enrichment Module": {
+        "Module code": "ST4992",
+        "Subject": "Statistics"
+    }
+}

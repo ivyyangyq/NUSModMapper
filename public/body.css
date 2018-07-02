@@ -1,0 +1,116 @@
+body {
+  background-color: #e3f2fd;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #fafafa;
+  height: 120px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  margin-top:auto;
+}
+
+.footer {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+.content {
+  margin-bottom:120px;
+}
+
+.block {
+  background-color: #b3e5fc;
+  position: relative;
+  margin: 100px auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.small-title {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.note {
+  font-size: 10px;
+}
+
+.disable {
+  display: none;
+}
+
+ .scrollale-dropdown-menu {
+   max-height:150px;  // you choice of number in pixels
+   overflow-x:hidden; // hides the horizontal scroll
+   overflow-y:auto;   // enables the vertical scroll
+}
+
+.mod_display,
+.sch_display {
+  background-color: #e0e0e0;
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.mod_title {
+  font-family: serif;
+  font-size: 16px;
+  border: 1px white;
+}
+
+.mod_header,
+.sch_header {
+  font-size: 20px;
+  background-color: #2979ff;
+  color: white;
+  text-indent: 3mm;
+  border-radius: 2px;
+  padding: 50px auto;
+}
+
+.mod_info {
+  font-family: serif;
+  font-size: 15px;
+  margin-left: 12px
+}
+
+.mod_sch_list {
+background-color: #eeeeee;
+border-radius: 3px;
+border: 2px white;
+width: 95%;
+margin: 0px auto;
+}
+
+.mod_sch_header {
+  font-size: 16px;
+  text-indent: 3mm;
+  font-weight: bold;
+}
+
+.mod_sch_title {
+  font-size: 15px;
+  text-indent: 5mm;
+}
+
+.mod_sch_info {
+  font-size: 13px;
+  text-indent: 8mm;
+}

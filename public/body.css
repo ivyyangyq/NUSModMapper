@@ -82,7 +82,12 @@ h4 {
   color: white;
   text-indent: 3mm;
   border-radius: 2px;
-  padding: 50px auto;
+  padding: 5mm auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
 .mod_info {
@@ -113,4 +118,8 @@ margin: 0px auto;
 .mod_sch_info {
   font-size: 13px;
   text-indent: 8mm;
+}
+
+.clear {
+  opacity: 0.2;
 }

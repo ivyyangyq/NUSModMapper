@@ -13,27 +13,52 @@ document.getElementById('network_text').value = "0 1\n0 2\n1 2\n2 3\n3 4\n1 4\n3
 
 }
 
+
+// display module
 function display_mod(mod) {
-  var mod_info = "<div class='mod_display'><h5 class='mod_header'></strong>" + mod['Module code'] + ' '+ mod['Name'];
-  mod_info += "</strong></h5><ul class='mod_info list-unstyled'><li class='mod_title collection-item'><p>Module Description:</p><p class='mod_info'>";
-  mod_info += mod['Module description'] + "</p><li class='mod_title collection-item'><p>Currently Offered in NUS:</p><p class='mod_info'>";
+  var mod_info = `<div class='mod_display'>
+    <div class='collapsible_header'>
+      <h5 class='mod_header'><strong>${mod['Module code']} ${mod.Name}</strong></h5>
+    </div>
+    <div class='mod_info disable'>
+    <ul class='list-unstyled'>
+      <li class='mod_title collection-item'>
+        <p>Module Description:</p>
+      <p class='mod_info'>${mod['Module description']}</p>
+      <li class='mod_title collection-item'>
+        <p>Currently Offered in NUS:</p>
+      <p class='mod_info'>`;
   if (mod['Currently offered in NUS'] == false || mod['Currently offered in NUS'] =='N.A.'){
     mod_info += 'NO！';
   } else {
     mod_info += 'Yes';
   }
-  mod_info += "</p><li class='mod_title collection-item'><p>Number of Schools Offered:</p><p class='mod_info'>";
-  mod_info += mod['Number of school offered'] + "</p><li class='mod_title collection-item'><p>Offered At:</p><div class='mod_sch_list'>";
+  mod_info += `<li class='mod_title collection-item'>
+        <p>Number of Schools Offered:</p>
+      <p class='mod_info'>${mod['Number of school offered']}</p>
+      <li class='mod_title collection-item'>
+        <p>Offered At:</p>
+        <div class='mod_sch_list'>`;
   var schools = mod['Offered at']
   schools.forEach(function(sch) {
-    var sch_info = "<h5 class='mod_sch_header'>" + sch.Name;
-    sch_info +=  "</h5><ul class='mod_sch list-unstyled'><li class='mod_sch_title'><p>Partner University Module:</p><p class='mod_sch_info'>";
-    sch_info += sch['Partner university code'] + ' ' + sch['Partner university module name'];
-    sch_info += "</p></li><li class='mod_sch_title'><p>Partner University Module Credit:</p><p class='mod_sch_info'>";
-    sch_info += sch['Partner university module credit'] + "</li>";
-    mod_info += sch_info + "</p></li></ul>";
+    var sch_info = `<h5 class='mod_sch_header'>${sch.Name}</h5>
+            <ul class='mod_sch list-unstyled'>
+              <li class='mod_sch_title'>
+                <p>Partner University Module:</p>
+                <p class='mod_sch_info'>
+                  ${sch['Partner university code']} ${sch['Partner university module name']}
+                </p>
+              </li>
+              <li class='mod_sch_title'>
+                <p>Partner University Module Credit:</p>
+                <p class='mod_sch_info'>
+                  ${sch['Partner university module credit']}
+                </p>
+              </li>
+            </ul>`;
+    mod_info += sch_info;
   });
-  mod_info += "</div></li></ul></div>";
+  mod_info += "</div></li><a class='hide_content' href='#'> hide</a></ul></div></div>";
   return mod_info;
 }
 
@@ -69,6 +94,7 @@ $(function(){
             result_list += display_mod(mod);
           });
           document.getElementById('result_mod').innerHTML = result_list;
+
         });
         return false;
     });
@@ -115,7 +141,13 @@ $(function(){
 });
 
 $(function(){
-  $(".mod_header").on('click', event => {
-    $(event.currentTarget).siblings().toggle();
+  $("#result_mod").on('click', '.collapsible_header',event => {
+    $(event.currentTarget).siblings().toggleClass('disable');
+  });
+});
+
+$(function(){
+  $("#result_mod").on('click', '.hide_content',event => {
+    $(event.currentTarget).parent().parent().toggleClass('disable');
   });
 });

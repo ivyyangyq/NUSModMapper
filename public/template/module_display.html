@@ -1,0 +1,47 @@
+<div class='mod_display'>
+  <div class='collapsible_header'>
+    <h5 class='mod_header'><strong>${mod['Module code']} ${mod.Name}</strong></h5>
+  </div>
+  <div class='mod_info'>
+    <ul class='list-unstyled disable'>
+      <li class='mod_title collection-item'>
+        <p>Module Description:</p>
+      <p class='mod_info'>mod['Module description']</p>
+      <li class='mod_title collection-item'>
+        <p>Currently Offered in NUS:</p>
+      <p class='mod_info'>
+        if (mod['Currently offered in NUS'] == false || mod['Currently offered in NUS'] =='N.A.'){
+          + 'NO！'
+        } else {
+          + 'Yes'
+        }
+      </p>
+      <li class='mod_title collection-item'>
+        <p>Number of Schools Offered:</p>
+      <p class='mod_info'>mod['Number of school offered']</p>
+      <li class='mod_title collection-item'>
+        <p>Offered At:</p>
+        <div class='mod_sch_list'>
+          for (sch in mod['Offered at']){
+          <h5 class='mod_sch_header'>sch.Name</h5>
+          <ul class='mod_sch list-unstyled'>
+            <li class='mod_sch_title'>
+              <p>Partner University Module:</p>
+              <p class='mod_sch_info'>
+                sch['Partner university code'] + ' ' + sch['Partner university module name']
+              </p>
+            </li>
+            <li class='mod_sch_title'>
+              <p>Partner University Module Credit:</p>
+              <p class='mod_sch_info'>
+                sch['Partner university module credit']
+              </p>
+            </li>
+          </ul>
+          }
+        </div>
+      </li>
+      <a class='hide_content' href='#'> hide</a>
+    </ul>
+  </div>
+</div>

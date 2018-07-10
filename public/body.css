@@ -52,6 +52,12 @@ h4 {
   display: none;
 }
 
+.card {
+  background-color: #e6e6ff;
+  position: relative;
+  margin: 20px auto;
+}
+
  .scrollale-dropdown-menu {
    max-height:150px;  // you choice of number in pixels
    overflow-x:hidden; // hides the horizontal scroll

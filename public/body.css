@@ -69,7 +69,8 @@ h4 {
   overflow: scroll;
 }
 
-.mod_title {
+.mod_title,
+.sch_title {
   font-family: serif;
   font-size: 16px;
   border: 1px white;
@@ -90,36 +91,81 @@ h4 {
   cursor: pointer;
 }
 
-.mod_info {
+.mod_info,
+.sch_info {
   font-family: serif;
   font-size: 15px;
-  margin-left: 12px
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
-.mod_sch_list {
+.mod_sch_list,
+.sch_mod_list {
 background-color: #eeeeee;
 border-radius: 3px;
 border: 2px white;
 width: 95%;
-margin: 0px auto;
+overflow-y: scroll;
+margin: 10px auto;
+margin-bottom: 10px;
+position: relative;
 }
 
-.mod_sch_header {
+.sch_mod_list {
+  background-color: white;
+}
+
+.mod_sch_header,
+.sch_mod_header {
   font-size: 16px;
   text-indent: 3mm;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.mod_sch_title {
+.mod_sch_title,
+.sch_mod_title {
   font-size: 15px;
   text-indent: 5mm;
 }
 
-.mod_sch_info {
+.mod_sch_info,
+.sch_mod_info {
   font-size: 13px;
   text-indent: 8mm;
 }
 
-.clear {
-  opacity: 0.2;
+.sch_mod {
+  cursor: pointer;
+}
+
+.Chemistry {
+  background-color: #ffe6cc;
+  padding-bottom: 10px;
+}
+
+.Food {
+  background-color: #ffffcc;
+  padding-bottom: 10px;
+}
+
+.Life {
+  background-color: #d9ffcc;
+  padding-bottom: 10px;
+}
+
+.Math {
+  background-color: #f5ccff;
+  padding-bottom: 10px;
+}
+
+.Physics {
+  background-color: #f2d9e6;
+  padding-bottom: 10px;
+}
+
+.Statisctics {
+  background-color: #ccffeb;
+  padding-bottom: 10px;
 }

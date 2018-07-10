@@ -1,0 +1,58 @@
+<div class='sch_display'>
+  <div class='collapsible_header'>
+    <h5 class='sch_header'><strong>${sch['Name']}</strong></h5>
+  </div>
+  <div class='school_info disable'>
+    <ul class='list-unstyled'>
+      var subjects = ['Chemistry', 'Food Science', 'Life Science','Math', 'Physics', 'Statistic']
+      subjects.forEach(sub => {
+        if (sch.hasOwnProperty(sub)) {
+          if (sub === 'Food Science') {
+            <li class='Food'>
+          } else if (sub === 'Life Science') {
+            <li class='Life'>
+          } else {
+            <li class=${sub}>
+          }
+
+        <p class='sch_title'><strong>${sub}</strong></p>
+        var numOfMods = `Number of ${sub} mods`;
+        <p class='sch_title'>Number of modules</p>
+        <p class='sch_info'>${sch[numOfMods]}</p>
+        <p class='sch_title sch_mod'>Modules:</p>
+        <div class='sch_mod_list disable'>
+        sch[sub]['Mods'].forEach(mod => {
+          <h5 class='sch_mod_header'>${mod['NUS module code'] ${mod['NUS module name']}}</h5>
+          <ul class='list-unstyled'>
+            <li class='sch_mod_title'>
+              <p>Partner University Module:</p>
+              <p class='sch_mod_info'>
+                ${mod['Partner university code']} ${mod['Partner university module name']}
+              </p>
+            </li>
+            <li class='sch_mod_title'>
+              <p>Partner University Module Credit:</p>
+              <p class='sch_mod_info'>
+                ${mod['Partner university module credit']}
+              </p>
+            </li>
+            <li class='sch_mod_title'>
+              <p>Currently offered in NUS:</p>
+              <p class='sch_mod_info'>
+                if (mod['Currently offered in NUS'] == false || mod['Currently offered in NUS'] =='N.A.'){
+                  + 'NO！'
+                } else {
+                  + 'Yes'
+                }
+              </p>
+            </li>
+          </ul>
+          })
+      </div>
+      </li>
+      }
+    })
+    <a class='hide_content' href='#'> hide</a>
+    </ul>
+  </div>
+</div>

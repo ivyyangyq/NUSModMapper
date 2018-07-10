@@ -18,7 +18,7 @@ var test = require("./test.json");
 var mod_name_list = Object.keys(mod_list);
 
 function search_module(mod) {
-  var module_name_list = includes(mod, mod_name_list);
+  var module_name_list = matchSubstring(mod, mod_name_list);
   if (module_name_list === undefined || module_name_list.length == 0) {
     // array empty or does not exist
     return "Not Found";
@@ -43,16 +43,16 @@ function includes(input, dataList) {
 }
 
 function matchSubstring(input, dataList) {
-  var reg = new RegExp(input.split('').join('\\w*').replace(/\W/, ""), 'i');
+  var reg = new RegExp(input, 'i');
   return dataList.filter(function(text) {
-    if (text.match(reg)) {
+    if (reg.test(text)) {
       return text;
     }
   });
 }
 
 function search_school(sch) {
-  var sch_name_list = includes(sch, sch_list);
+  var sch_name_list = matchSubstring(sch, sch_list);
   if (sch_name_list === undefined || sch_name_list.length == 0) {
     // array empty or does not exist
     return "Not Found";

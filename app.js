@@ -83,6 +83,13 @@ app.get('/hello', function(req, res){
     res.end();
 });
 
+app.post('/send_mod_list', function(req, res){
+  res.send({mod: mod_list});
+})
+
+app.post('/send_sch_list', function(req, res){
+  res.send({sch: sch_list});
+})
 
 app.post('/search_mod', function(req, res){
   var result = search_module(req.body.mod)

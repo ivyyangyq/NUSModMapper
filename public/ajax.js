@@ -24,9 +24,11 @@ function display_mod(mod) {
     <ul class='list-unstyled'>
       <li class='mod_title collection-item'>
         <p>Module Description:</p>
+      </li>
       <p class='mod_info'>${mod['Module description']}</p>
       <li class='mod_title collection-item'>
         <p>Currently Offered in NUS:</p>
+      </li>
       <p class='mod_info'>`;
   if (mod['Currently offered in NUS'] == false || mod['Currently offered in NUS'] =='N.A.'){
     mod_info += 'NO！';
@@ -37,7 +39,7 @@ function display_mod(mod) {
         <p>Number of Schools Offered:</p>
       <p class='mod_info'>${mod['Number of school offered']}</p>
       <li class='mod_title collection-item'>
-        <p>Offered At:</p>
+        <p>Offered At:</p></li>
         <div class='mod_sch_list'>`;
   var schools = mod['Offered at']
   schools.forEach(function(sch) {
@@ -63,8 +65,60 @@ function display_mod(mod) {
 }
 
 function display_sch(sch) {
-  var sch_info = "<div class='sch_display'><h5 class='sch_header'><strong>";
-  sch_info += sch['Name']+ "</strong></h5></div>";
+  var sch_info = `<div class='sch_display'>
+    <div class='collapsible_header'>
+      <h5 class='sch_header'><strong>${sch['Name']}</strong></h5>
+    </div>
+    <div class='sch_info disable'>
+    <ul class='list-unstyled'>`;
+  var subjects = ['Chemistry', 'Food Science', 'Life Science','Math', 'Physics', 'Statistic'];
+  subjects.forEach(sub => {
+    if (sch.hasOwnProperty(sub)) {
+      if (sub === 'Food Science') {
+        sch_info += "<li class='Food'>";
+      } else if (sub === 'Life Science') {
+        sch_info += "<li class='Life'>";
+      } else {
+        sch_info += `<li class=${sub}>`;
+      }
+
+      sch_info += `<p class='sch_title'><strong>${sub}</strong></p>`;
+      var numOfMods = `Number of ${sub} mods`;
+      sch_info += `<p class='sch_title'>Number of modules</p>
+      <p class='sch_info'>${sch[sub][numOfMods]}</p>
+      <p class='sch_title sch_mod'>Modules:</p>
+      <div class='sch_mod_list disable'>`;
+      var sub_name = `${sub}`;
+      var modules = sch[sub_name];
+      modules['Mods'].forEach(mod => {
+        sch_info += `<h5 class='sch_mod_header'>${mod['NUS module code']} ${mod['NUS module name']}</h5>
+        <ul class='list-unstyled'>
+          <li class='sch_mod_title'>
+            <p>Partner University Module:</p>
+            <p class='sch_mod_info'>
+              ${mod['Partner university code']} ${mod['Partner university module name']}
+            </p>
+          </li>
+          <li class='sch_mod_title'>
+            <p>Partner University Module Credit:</p>
+            <p class='sch_mod_info'>
+              ${mod['Partner university module credit']}
+            </p>
+          </li>
+          <li class='sch_mod_title'>
+            <p>Currently offered in NUS:</p>
+            <p class='sch_mod_info'>`;
+          if (mod['Currently offered in NUS'] == false || mod['Currently offered in NUS'] =='N.A.'){
+            sch_info += 'NO！';
+          } else {
+            sch_info += 'Yes';
+          }
+          sch_info += `</p></li></ul>`;
+      })
+      sch_info += "</div></li>";
+    }
+  })
+  sch_info+=`<a class='hide_content' href='#'> hide</a></ul></div></div>`;
   return sch_info;
 }
 
@@ -94,6 +148,7 @@ $(function(){
             result_list += display_mod(mod);
           });
           document.getElementById('result_mod').innerHTML = result_list;
+          $('#input_mod').val("");
 
         });
         return false;
@@ -126,6 +181,7 @@ $(function(){
             sch_list += display_sch(sch);
           });
           document.getElementById('result_sch').innerHTML = sch_list;
+          $('#input_sch').val("");
         });
         return false;
     });
@@ -149,5 +205,83 @@ $(function(){
 $(function(){
   $("#result_mod").on('click', '.hide_content',event => {
     $(event.currentTarget).parent().parent().toggleClass('disable');
+  });
+});
+
+$(function(){
+  $("#result_sch").on('click', '.collapsible_header',event => {
+    $(event.currentTarget).siblings().toggleClass('disable');
+  });
+});
+
+$(function(){
+  $("#result_sch").on('click', '.hide_content',event => {
+    $(event.currentTarget).parent().parent().toggleClass('disable');
+  });
+});
+
+$(function(){
+  $("#result_sch").on('click', '.sch_mod',event => {
+    $(event.currentTarget).next('.sch_mod_list').toggleClass('disable');
+  });
+});
+
+$(function(){
+  $("#result_mod").on('click', '.mod_sch_header',event => {
+    var sch_text = $(event.currentTarget).text();
+    var formData = new FormData();
+    formData.append('sch', sch_text);
+    $.ajax({
+        url: '/search_sch',
+        method: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false
+    }).done(function(res){
+      $('#school_button').siblings().removeClass('active');
+      $('#school_button').addClass('active');
+      $('#result_sch').siblings().addClass('disable');
+      $('#result_sch').removeClass('disable');
+      if (res.sch == "Not Found") {
+        return false;
+      }
+      var sch_list = "";
+      res.sch.forEach(function(sch) {
+        sch_list += display_sch(sch);
+      });
+      document.getElementById('result_sch').innerHTML = sch_list;
+      $('#input_sch').val("");
+    });
+    return false;
+  });
+});
+
+$(function(){
+  $("#result_sch").on('click', '.sch_mod_header',event => {
+    var mod_text = $(event.currentTarget).text();
+    var formData = new FormData();
+    formData.append('mod', mod_text);$.ajax({
+        url: '/search_mod',
+        method: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false
+    }).done(function(res){
+      $('#module_button').siblings().removeClass('active');
+      $('#module_button').addClass('active');
+      $('#result_mod').siblings().addClass('disable');
+      $('#result_mod').removeClass('disable');
+      if (res.mod == "Not Found") {
+        return false;
+      }
+      var result_list = "";
+      res.mod.forEach(function(mod) {
+        result_list += display_mod(mod);
+      });
+      document.getElementById('result_mod').innerHTML = result_list;
+      $('#input_mod').val("");
+
+    });
+    return false;
   });
 });

@@ -66,7 +66,17 @@ function search_school(sch) {
   return result;
 }
 
-
+function search_sub(sub) {
+  var subject_mod = modules[sub];
+  var result = [];
+  for (var key in subject_mod){
+    if (subject_mod.hasOwnProperty(key)) {
+      subject_mod[key]['Module code'] = key;
+      result.push(subject_mod[key]);
+    }
+  }
+  return result;
+}
 
 app.configure(function() {
     app.set('port', config.port);
@@ -91,14 +101,19 @@ app.post('/send_sch_list', function(req, res){
   res.send({sch: sch_list});
 })
 
+app.post('/get_subject', function(req, res){
+  var result = search_sub(req.body.sub);
+  res.send({sub: result});
+})
+
 app.post('/search_mod', function(req, res){
-  var result = search_module(req.body.mod)
+  var result = search_module(req.body.mod);
             res.send({mod: result});
 
 });
 
 app.post('/search_sch', function(req, res){
-  var result = search_school(req.body.sch)
+  var result = search_school(req.body.sch);
             res.send({sch: result});
 
 });

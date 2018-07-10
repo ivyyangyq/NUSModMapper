@@ -3,9 +3,10 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="./bootstrap.min.css" type="text/css" rel="stylesheet"/>
-  <link href="./body.css" type="text/css" rel="stylesheet"/>
   <script src="build/sigma.min.js"      type="text/javascript"></script>
   <script src="build/jquery.min.js"     type="text/javascript"></script>
+  <script src="build/typeahead.jquery.min.js" type="text/javascript"></script>
+  <link href="./body.css" type="text/css" rel="stylesheet"/>
   <script src="./ajax.js"         type="text/javascript"></script>
 </head>
 <body>
@@ -30,15 +31,12 @@
           <a class="nav-link" href="#">About</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-2 float-lg-right mr-lg-2" id="search_mod">
-        <input class="form-control mr-sm-2" type="search" id="input_mod" placeholder="Search by Modules" aria-label="Search">
+      <form class="form-inline my-2 my-lg-2 float-lg-right mr-lg-2 scrollale-dropdown-menu" id="search_mod">
+        <input class="typeahead form-control mr-sm-2" type="search" id="input_mod" placeholder="Search by Modules" aria-label="Search">
         <button class="btn btn-outline-primary my-2 my-sm-" id="submit_mod" type="submit">Search</button>
       </form>
-      <form class="form-inline my-2 my-lg-2 float-lg-right" id="search_sch">
-        <div class="scrollable-dropdown-menu">
-          <input class="form-control mr-sm-2" type="search" id="input_sch" placeholder="Search by Schools" aria-label="Search">
-          <div id="sch_auto"></div>
-        </div>
+      <form class="form-inline my-2 my-lg-2 float-lg-right scrollale-dropdown-menu" id="search_sch">
+        <input class="form-control mr-sm-2 typeahead" type="search" id="input_sch" placeholder="Search by Schools" aria-label="Search">
         <button class="btn btn-outline-primary my-2 my-sm-0" id="submit_sch" type="submit">Search</button>
       </form>
     </div>
@@ -62,7 +60,6 @@
     <div id="result_mod" class="disable">
       <p class="not_found"> This module is not found!</p>
     </div>
-
 
 
     <!-- School Search Result -->

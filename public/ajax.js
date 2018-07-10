@@ -13,6 +13,34 @@ document.getElementById('network_text').value = "0 1\n0 2\n1 2\n2 3\n3 4\n1 4\n3
 
 }
 
+var mod_list;
+function getModList(){
+  $.ajax ({
+      async: false,
+      url: '/send_mod_list',
+      method: 'POST',
+      processData: false,
+      contentType: false
+  }).done(function(res){
+    mod_list = Object.keys(res.mod);
+  });
+}
+
+getModList();
+
+var sch_list;
+function getSchList() {
+  $.ajax ({
+      async: false,
+      url: '/send_sch_list',
+      method: 'POST',
+      processData: false,
+      contentType: false
+  }).done(function(res){
+    sch_list = res.sch;
+  });
+}
+getSchList();
 
 // display module
 function display_mod(mod) {
@@ -283,5 +311,53 @@ $(function(){
 
     });
     return false;
+  });
+});
+
+var substringMatcher = function(strs) {
+  return function findMatches(q, cb) {
+    var matches, substringRegex;
+
+    // an array that will be populated with substring matches
+    matches = [];
+
+    // regex used to determine if a string contains the substring `q`
+    substrRegex = new RegExp(q, 'i');
+
+    // iterate through the pool of strings and for any string that
+    // contains the substring `q`, add it to the `matches` array
+    $.each(strs, function(i, str) {
+      if (substrRegex.test(str)) {
+        matches.push(str);
+      }
+    });
+
+    cb(matches);
+  };
+};
+
+$(document).ready(() => {
+  $('#search_mod .typeahead').typeahead({
+  hint: true,
+  highlight: true,
+  minLength: 1
+},
+  {
+    name: 'mod_list',
+    limit: 5,
+    source: substringMatcher(mod_list)
+  });
+});
+
+$(document).ready(() => {
+  $('#search_sch .typeahead').typeahead({
+  hint: true,
+  highlight: true,
+  minLength: 1
+},
+  {
+    name: 'typeahead',
+    limit: 5,
+    source: substringMatcher(sch_list)
   });
 });

@@ -234,6 +234,24 @@ $(function(){
 });
 
 $(function(){
+  $("#school_button").on('click', ()=> {
+    $('#school_button').siblings().removeClass('active');
+    $('#school_button').addClass('active');
+    $('#school').removeClass('disable');
+    $('#school').siblings().addClass('disable');
+  })
+});
+
+$(function(){
+  $("#about_button").on('click', ()=> {
+    $('#about_button').siblings().removeClass('active');
+    $('#about_button').addClass('active');
+    $('#about').removeClass('disable');
+    $('#about').siblings().addClass('disable');
+  })
+});
+
+$(function(){
   $("#result_mod").on('click', '.collapsible_header',event => {
     $(event.currentTarget).siblings().toggleClass('disable');
   });

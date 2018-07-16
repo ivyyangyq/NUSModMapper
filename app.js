@@ -42,8 +42,13 @@ function includes(input, dataList) {
   })
 }
 
+function escapeRegExp(string){
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+
 function matchSubstring(input, dataList) {
-  var reg = new RegExp(input, 'i');
+  var input_string = escapeRegExp(input);
+  var reg = new RegExp(input_string, 'i');
   return dataList.filter(function(text) {
     if (reg.test(text)) {
       return text;

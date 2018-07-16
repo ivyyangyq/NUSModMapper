@@ -169,6 +169,7 @@ $(function(){
           $('#result_mod').siblings().addClass('disable');
           $('#result_mod').removeClass('disable');
           if (res.mod == "Not Found") {
+            $('#input_mod').val("")
             return false;
           }
           var result_list = "";
@@ -202,6 +203,7 @@ $(function(){
           $('#result_sch').siblings().addClass('disable');
           $('#result_sch').removeClass('disable');
           if (res.sch == "Not Found") {
+            $('#input_sch').val("")
             return false;
           }
           var sch_list = "";
@@ -367,6 +369,10 @@ $(function(){
   });
 });
 
+function escapeRegExp(string){
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+
 var substringMatcher = function(strs) {
   return function findMatches(q, cb) {
     var matches, substringRegex;
@@ -374,8 +380,9 @@ var substringMatcher = function(strs) {
     // an array that will be populated with substring matches
     matches = [];
 
+    var input = escapeRegExp(q);
     // regex used to determine if a string contains the substring `q`
-    substrRegex = new RegExp(q, 'i');
+    substrRegex = new RegExp(input, 'i');
 
     // iterate through the pool of strings and for any string that
     // contains the substring `q`, add it to the `matches` array

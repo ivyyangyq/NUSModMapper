@@ -2,11 +2,12 @@ body {
   background-color: #e3f2fd;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 footer {
   background-color: #fafafa;
-  height: 120px;
+  height: 15%px;
   text-align: center;
   width: 100%;
   position: fixed;
@@ -15,26 +16,61 @@ footer {
   left: 0;
   text-align: center;
   margin-top:auto;
+  z-index:1;
 }
 
 .footer {
   text-align: center;
 }
 
-h4 {
-  text-align: center;
-  position: relative;
-  top: 20px;
+.navbar {
+  background-color: #bbdefb;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  height: 18%;
+}
+
+nav li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  display: inline-block;
+
 }
 
 .content {
-  margin-bottom:120px;
+  position: relative;
+  margin-top: 140px;
+  margin-bottom: 120px;
+}
+
+#home main {
+  background-image: url("./image/home.jpg");
+  background-size: 100% 100%;
+  text-align: center;
+  /*height: 560px;*/
+  height: 67%;
+  width: 100%;
+}
+
+h1 {
+  position: relative;
+  top: 30px;
+  font-size: 60px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  position: relative;
+  top: 120px;
+  right: 22px;
 }
 
 .block {
-  background-color: #b3e5fc;
   position: relative;
-  margin: 100px auto;
+  margin: 140px auto;
   text-align: center;
   border-radius: 5px;
 }
@@ -55,7 +91,7 @@ h4 {
 .card {
   background-color: #e6e6ff;
   position: relative;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
  .scrollale-dropdown-menu {
@@ -82,7 +118,7 @@ h4 {
 
 .mod_display,
 .sch_display {
-  background-color: #e0e0e0;
+  background-color: white;
   position: relative;
   display: block;
   margin: 10px auto;
@@ -93,19 +129,20 @@ h4 {
 
 .mod_title,
 .sch_title {
-  font-family: serif;
-  font-size: 16px;
+  font-family: Arial;
+  font-size: 20px;
   border: 1px white;
+  padding-left: 20px;
 }
 
 .mod_header,
 .sch_header {
-  font-size: 20px;
+  font-size: 25px;
   background-color: #2979ff;
   color: white;
   text-indent: 3mm;
   border-radius: 2px;
-  padding: 5mm auto;
+  padding: 10mm auto;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -115,11 +152,12 @@ h4 {
 
 .mod_info,
 .sch_info {
-  font-family: serif;
-  font-size: 15px;
+  font-family: Arial;
+  font-size: 20px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .mod_sch_list,
@@ -164,30 +202,132 @@ position: relative;
 
 .Chemistry {
   background-color: #ffe6cc;
-  padding-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px dotted white;
+
 }
 
 .Food {
   background-color: #ffffcc;
-  padding-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px dotted white;
 }
 
 .Life {
   background-color: #d9ffcc;
-  padding-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px dotted white;
 }
 
 .Math {
   background-color: #f5ccff;
-  padding-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px dotted white;
 }
 
 .Physics {
   background-color: #f2d9e6;
-  padding-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px dotted white;
 }
 
 .Statisctics {
   background-color: #ccffeb;
-  padding-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px dotted white;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
+
+#about main {
+  width:100%;
+  height: 70%;
+  background-image: url("./image/orbital.jpg");
+  background-size: 100% 100%;
+}
+
+#about main .container h1{
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 0px;
+  padding-top: 80px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+#about main .container p {
+  color: black;
+  font-size: 20px;
+  position: relative;
+}
+
+
+#about main .container .jumping_button {
+  position: relative;
+  margin: 40px auto;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  width: 40%;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.jumping_button a {
+  color: white;
+}
+
+#about #guide {
+  background-color: #DDDDDD;
+  position: relative;
+  margin: 0 auto;
+}
+
+#about #guide .container h1 {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+#about #guide .function {
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+}
+
+#about #guide img {
+  height: 32px;
+}
+
+#about #guide h3 {
+  font-weight: 300;
+  font-size: 23px;
+  text-transform: capitalize;
+}
+
+#about #guide p {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
 }

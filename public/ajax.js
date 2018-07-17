@@ -99,7 +99,7 @@ function display_sch(sch) {
     </div>
     <div class='sch_info disable'>
     <ul class='list-unstyled'>`;
-  var subjects = ['Chemistry', 'Food Science', 'Life Science','Math', 'Physics', 'Statistic'];
+  var subjects = ['Chemistry', 'Food Science', 'Life Science','Math', 'Physics', 'Statistics'];
   subjects.forEach(sub => {
     if (sch.hasOwnProperty(sub)) {
       if (sub === 'Food Science') {
@@ -177,6 +177,9 @@ $(function(){
             result_list += display_mod(mod);
           });
           document.getElementById('result_mod').innerHTML = result_list;
+          if (res.mod.length === 1) {
+            $('.mod_info').removeClass('disable');
+          }
           $('#input_mod').val("");
 
         });
@@ -211,6 +214,9 @@ $(function(){
             sch_list += display_sch(sch);
           });
           document.getElementById('result_sch').innerHTML = sch_list;
+          if (res.sch.length === 1) {
+            $('.sch_info').removeClass('disable');
+          }
           $('#input_sch').val("");
         });
         return false;
@@ -251,6 +257,43 @@ $(function(){
     $('#about').removeClass('disable');
     $('#about').siblings().addClass('disable');
   })
+});
+
+$(function(){
+  $(".country").on('click', event => {
+    $(event.currentTarget).children().toggleClass('disable');
+  });
+});
+
+$(function(){
+  $(".school").on('click', event => {
+    var sch_text = $(event.currentTarget).text();
+    var formData = new FormData();
+    formData.append('sch', sch_text);
+    $.ajax({
+        url: '/search_sch',
+        method: 'POST',
+        data: formData,
+        processData: false,
+        contentType: false
+    }).done(function(res){
+      $('#school_button').siblings().removeClass('active');
+      $('#school_button').addClass('active');
+      $('#result_sch').siblings().addClass('disable');
+      $('#result_sch').removeClass('disable');
+      if (res.sch == "Not Found") {
+        return false;
+      }
+      var sch_list = "";
+      res.sch.forEach(function(sch) {
+        sch_list += display_sch(sch);
+      });
+      document.getElementById('result_sch').innerHTML = sch_list;
+      $('.sch_info').removeClass('disable');
+      $('#input_sch').val("");
+    });
+    return false;
+  });
 });
 
 $(function(){
@@ -333,6 +376,7 @@ $(function(){
         sch_list += display_sch(sch);
       });
       document.getElementById('result_sch').innerHTML = sch_list;
+      $('.sch_info').removeClass('disable');
       $('#input_sch').val("");
     });
     return false;
@@ -362,6 +406,7 @@ $(function(){
         result_list += display_mod(mod);
       });
       document.getElementById('result_mod').innerHTML = result_list;
+      $('.mod_info').removeClass('disable');
       $('#input_mod').val("");
 
     });

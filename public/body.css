@@ -276,9 +276,10 @@ position: relative;
 .country {
   background-color:#F8F8F8;
   color:black;
-  font-size: 20px;
+  font-size: 23px;
   text-indent: 5mm;
   cursor: pointer;
+  border: 1px solid white;
 }
 
 .school {
@@ -335,6 +336,8 @@ position: relative;
   background-color: #DDDDDD;
   position: relative;
   margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 #about #guide .container h1 {
@@ -344,27 +347,45 @@ position: relative;
   font-size: 40px;
   margin-top: 0px;
   margin-bottom: 40px;
+  margin-right: 45px;
   text-transform: uppercase;
-}
+  text-align: center;
 
-#about #guide .function {
-  font-family: 'Raleway', sans-serif;
-  text-align: left;
-}
-
-#about #guide img {
-  height: 32px;
 }
 
 #about #guide h3 {
-  font-weight: 300;
-  font-size: 23px;
+  position: relative;
+  top: 10px;
+  margin-bottom: 20px;
+  font-weight: 350;
+  font-size: 25px;
   text-transform: capitalize;
 }
 
+
 #about #guide p {
+  text-align: center;
   font-size: 20px;
-  line-height: 20px;
-  padding: 0 20px;
-  margin-bottom: 20px;
 }
+
+#about #guide img {
+  height: 200px;
+  width : 500px;
+  display: block;
+  position: relative ;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+#about #guide .function .part {
+  display: inline-block;
+
+}
+
+#about #guide .function .part p {
+ width: 300px;
+ position: relative;
+ bottom: 60px;
+}
+
+

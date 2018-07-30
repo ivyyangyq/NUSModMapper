@@ -116,6 +116,25 @@ h3 {
           box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 
+.not_found {
+  width: 450px;
+  height: 150px;
+  border: 2px solid white;
+  border-radius: 15px;
+  position: relative;
+  margin: 160px auto;
+  background-color: orange;
+}
+
+.not_found p {
+  width: 320px;
+  font-size: 28px;
+  font-weight: 20px;
+  position: relative;
+  margin: 50px auto;
+}
+
+
 .mod_display,
 .sch_display {
   background-color: white;

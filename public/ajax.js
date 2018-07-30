@@ -394,7 +394,8 @@ $(function(){
           $('#result_mod').siblings().addClass('disable');
           $('#result_mod').removeClass('disable');
           if (res.mod == "Not Found") {
-            $('#input_mod').val("")
+            $('#input_mod').val("");
+            document.getElementById('result_mod').innerHTML = `<p class="not_found"> This module is not found!</p>`;
             return false;
           }
           var result_list = "";
@@ -432,6 +433,7 @@ $(function(){
           $('#result_sch').removeClass('disable');
           if (res.sch == "Not Found") {
             $('#input_sch').val("")
+            document.getElementById('result_sch').innerHTML = `<p class="not_found"> This school is not found!</p>`;
             return false;
           }
           var sch_list = "";

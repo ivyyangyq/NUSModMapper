@@ -395,7 +395,8 @@ $(function(){
           $('#result_mod').removeClass('disable');
           if (res.mod == "Not Found") {
             $('#input_mod').val("");
-            document.getElementById('result_mod').innerHTML = `<p class="not_found"> This module is not found!</p>`;
+            var text = `<div class='not_found'><p> This module is not found !</p></div>`
+            document.getElementById('result_mod').innerHTML = text ;
             return false;
           }
           var result_list = "";
@@ -433,7 +434,8 @@ $(function(){
           $('#result_sch').removeClass('disable');
           if (res.sch == "Not Found") {
             $('#input_sch').val("")
-            document.getElementById('result_sch').innerHTML = `<p class="not_found"> This school is not found!</p>`;
+            var text = `<div class='not_found'><p> This school is not found !</p></div>`
+            document.getElementById('result_sch').innerHTML = text;
             return false;
           }
           var sch_list = "";
